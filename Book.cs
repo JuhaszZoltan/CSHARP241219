@@ -25,7 +25,7 @@ internal class Book
         $"\tID: ISBN{ISBN}\n" +
         $"\tTitle: {Title}\n" +
         $"\tAuthor{(Authors.Count == 1 ? "" : "s")}: " +
-        $"{string.Join(", ", Authors)}\n";
+            $"{string.Join(", ", Authors)}\n";
 
     public Book(string title, params string[] authorNames)
     {
