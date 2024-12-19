@@ -12,7 +12,7 @@ internal class Author
     public Author(string fullName)
     {
         GUID = Guid.NewGuid();
-        string[] nps = fullName.Split(' ');
+        var nps = fullName.Split(' ');
         FirstName = nps[0];
         SurName = nps[1];
     }

@@ -35,8 +35,8 @@ internal class Book
 
         Title = title;
 
-        List<Author> tempAuts = [];
-        foreach (var an in authorNames) tempAuts.Add(new(an));
-        Authors = tempAuts;
+        List<Author> tmp = [];
+        foreach (var an in authorNames) tmp.Add(new(an));
+        Authors = tmp;
     }
 }
