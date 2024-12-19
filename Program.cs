@@ -6,4 +6,10 @@ Book book01 = new(
 
 Book book02 = new(
     "A Formal Approach to Game Design and Game Research",
-    "Robin Hunicke", "Marc LeBlanc", "Robert Zubek");
+    "Robin Hunicke",
+    "Marc LeBlanc",
+    "Robert Zubek");
+
+Book book03 = new(
+    title: "The Sentinels",
+    authorNames: ["geno Salvatore", "R. A. Salvatore"]);
