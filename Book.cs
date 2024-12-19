@@ -30,13 +30,10 @@ internal class Book
         return nameList[..^2];
     }
 
-    public override string ToString()
-    {
-        return 
-            $"\tID: ISBN{ISBN}\n" +
-            $"\tTitle: {Title}\n" +
-            $"\tauthor{(Authors.Count == 1 ? "" : "s")}: {GetAuthorNames()}\n";
-    }
+    public override string ToString() => 
+        $"\tID: ISBN{ISBN}\n" +
+        $"\tTitle: {Title}\n" +
+        $"\tauthor{(Authors.Count == 1 ? "" : "s")}: {GetAuthorNames()}\n";
 
     public Book(string title, params string[] authorNames)
     {
