@@ -6,6 +6,9 @@ internal class Author
     public string SurName { get; set; }
     public string FirstName { get; set; }
 
+    public override string ToString() =>
+        $"{FirstName} {SurName}";
+
     public Author(string fullName)
     {
         GUID = Guid.NewGuid();

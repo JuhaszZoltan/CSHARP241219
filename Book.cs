@@ -21,19 +21,11 @@ internal class Book
     public int Stock { get; set; }
     public int Price { get; set; }
 
-
-    private string GetAuthorNames()
-    {
-        string nameList = string.Empty;
-        foreach (var an in Authors)
-            nameList += $"{an.FirstName} {an.SurName}, ";
-        return nameList[..^2];
-    }
-
-    public override string ToString() => 
+    public override string ToString() =>
         $"\tID: ISBN{ISBN}\n" +
         $"\tTitle: {Title}\n" +
-        $"\tauthor{(Authors.Count == 1 ? "" : "s")}: {GetAuthorNames()}\n";
+        $"\tAuthor{(Authors.Count == 1 ? "" : "s")}: " +
+        $"{string.Join(", ", Authors)}\n";
 
     public Book(string title, params string[] authorNames)
     {
