@@ -12,4 +12,4 @@ Book book02 = new(
 
 Book book03 = new(
     title: "The Sentinels",
-    authorNames: ["geno Salvatore", "R. A. Salvatore"]);
+    authorNames: ["geno Salvatore", "R.A. Salvatore"]);
